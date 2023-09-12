@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Border and Background in CSS</title>
+    <style>
+        #firstPara {
+            background-color: black;
+            height: 100px;
+            width: 300px;
+            color: white;
+            border: 3px solid yellow;
+            /* border-width: 3px;
+            border-style: solid;
+            border-color: yellow; */
+
+            border-radius: 4px;
+        }
+
+        #secondPara {
+            background-color: blue;
+            height: 100px;
+            width: 300px;
+            color: white;
+            border-top: 3px solid green;
+            border-right: 3px solid pink;
+            border-left: 3px solid yellow;
+            border-bottom: 3px solid red;
+            border-top-left-radius: 3px;
+            border-top-right-radius: 3px;
+            border-bottom-left-radius: 3px;
+            border-bottom-right-radius: 3px;
+        }
+
+
+        #thirdPara {
+            height: 500px;
+            width: 700px;
+            background-image: url('/logoblueharry.png');
+            background-repeat: no-repeat;
+            border: 2px solid red;
+            background-position: center center;
+            /* background-position: center top; */
+            /* background-position: top left; */
+        }
+    </style>
+</head>
+
+<body>
+
+    <h3>This is first Para</h3>
+    <p id="firstPara">This is the content inside first Para</p>
+
+    <h3>This is the second Para</h3>
+    <p id="secondPara">This is the content inside second Para</p>
+
+    <h3>This is third Para</h3>
+    <p id="thirdPara">This is the content inside third Para</p>
+</body>
+
+</html>

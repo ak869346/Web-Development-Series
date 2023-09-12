@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adding Css to Markup</title>
+    <style>
+        #Internal {
+            color: chartreuse;
+            background-color: yellow;
+        }
+
+        h3,span {
+            background-color: grey;
+            color: white;
+        }
+        .border {
+            border: 2px solid black;
+        }
+    </style>
+    <link rel="stylesheet" href="/CSS/ankit.css">
+</head>
+<body>
+    <h3>Adding Css to the Markup </h3>
+    <!-- /* inline css */ -->
+    <p style="color: aquamarine; background-color: red;">This is the way to adding css to the Markup by Inline CSS.</p> 
+    <p id="Internal" class="border"> This is the method of Internal CSS. </p>
+    <span>This is for testing of Grouping Selector.</span>
+    
+
+    <p id="External" class="border"> This is the method of adding css to the markup by External CSS.</p>
+</body>
+</html>

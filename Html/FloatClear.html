@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alignement</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        .container {
+            border: 2px solid black;
+            background-color: aquamarine;
+            width: 900px;
+            margin: 33px auto;
+        }
+        .item {
+            border: 3px solid grey; 
+            margin: 12px 3px;
+            padding: 12px 3px;
+            background-color: rgb(235, 191, 137);
+        }
+        #fruit {
+            float: left;
+            width: 48%;
+            padding-left: 10px;
+        }
+        #computer {
+            float: right;
+            width: 48%;
+            padding-left: 10px;
+        }
+
+        #Cricket {
+            clear: both;
+            width: 100%;
+            margin: auto;
+        }
+
+        p,h3 {
+            /* text-align: center;
+            text-align: left;
+            text-align: right; */
+            text-align: justify;
+        }
+        h1 {
+            margin: auto;
+            width: 455px;
+            padding-left: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Welcome to my Store</h1>
+        <div id="fruit" class="item">
+            <h3>Fruits</h3>
+            <p id="fruitPara" class="para">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nesciunt sunt earum itaque veniam facilis ex
+                modi at tenetur! Sit, quas quisquam cumque dolore consequatur distinctio possimus repellendus eius
+                assumenda ut!
+            </p>
+        </div>
+
+        <div id="computer" class="item">
+            <h3>Computer</h3>
+            <p id="cricketPara" class="para">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nesciunt sunt earum itaque veniam facilis ex
+                modi at tenetur! Sit, quas quisquam cumque dolore consequatur distinctio possimus repellendus eius
+                assumenda ut!
+            </p>
+        </div>
+
+        <div id="Cricket" class="item">
+            <h3>Cricket</h3>
+            <p id="cricketPara" class="para">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nesciunt sunt earum itaque veniam facilis ex
+                modi at tenetur! Sit, quas quisquam cumque dolore consequatur distinctio possimus repellendus eius
+                assumenda ut!
+            </p>
+        </div>
+
+    </div>
+</body>
+
+</html>

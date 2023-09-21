@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scope and Conditionals</title>
+</head>
+
+<body>
+    <h3>Scope and Conditional Statement</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, corrupti deserunt! Tempore corrupti adipisci
+        similique, ullam animi natus sit laudantium.</p>
+
+    <script>
+        var string = "This is String1";
+        var string = "This is String2";
+
+        console.log(string);
+
+        let a = "Ankit";
+        {
+            let a = "Bhavesh";
+            console.log(a);
+        }
+        console.log(a);
+
+        const b = "Const cannot be changed";
+        // b = "I want to change it";  // cannot possible...
+        console.log(b);
+
+
+        let age = 23;
+        if (age < 12) {
+            console.log("He is a boy");
+        }
+        else if (age < 20) {
+            console.log("He a teenager");
+        }
+        else {
+            console.log("He is a young boy");
+        }
+
+
+        const cups = 18;
+        switch (cups) {
+            case 12:
+                console.log("Cups value is 12");
+                break;
+            case 56:
+                console.log("Cups value is 56");
+                break;
+            case 34:
+                console.log("Cups value is 34");
+                break;
+            case 18:
+                console.log("Cups value is 18");
+                break;
+
+            default:
+                console.log("Wrong value of cups");
+                break;
+        }
+    </script>
+</body>
+
+</html>

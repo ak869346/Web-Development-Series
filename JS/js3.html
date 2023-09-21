@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS String functions</title>
+</head>
+
+<body>
+    <h3>String Function</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi voluptatem cumque magni temporibus aliquid a
+        minima natus quis atque commodi rem, quibusdam delectus, ipsam eius, iusto corporis veritatis culpa id?</p>
+
+    <script>
+        var str = "This is a String";
+        console.log(str);
+
+        var position = str.indexOf("is");
+        console.log(position);
+
+        position = str.lastIndexOf("is");
+        console.log(position);
+
+        var substr = str.slice(1,7);
+        console.log(substr);
+
+        substr = str.substring(1,7);
+        console.log(substr);
+
+        var substr1 = str.substr(1,6);
+        console.log(substr);
+
+        var replaced = str.replace("String","Ankit");
+        console.log(str);
+        console.log(replaced);
+
+        console.log(str.toUpperCase());
+        console.log(str.toLowerCase());
+
+        var newStr = str.concat(' New String');
+        console.log(newStr);
+
+        var strWithWhiteSpaces = "     This is      Bangalore    ";
+        console.log(strWithWhiteSpaces.trim());
+
+
+        var char2 = str.charAt(2);
+        var char3 = str.charCodeAt(2);
+        console.log(char2);
+        console.log(char3);
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript String</title>
+
+</head>
+<body>
+    <div class="container">
+        <div id="content"></div>
+        <h4>String in JavaScript</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio quo nesciunt cum nemo, illum quod modi,
+            accusantium iusto magni dolorum porro rerum odit vitae expedita minima non ipsa. Delectus, consectetur!</p>
+    </div>
+    <script>
+        var string = "Virat ";
+        var name = 'is king ';
+        var channel = "CodewithHarry";
+        var message = "of cricket";
+        var temp = `${string} is a nice person and has channel ${channel}`  // template literals
+        console.log(temp);
+        console.log(string + name + message);
+
+        var length = name.length;
+        console.log(`Length of name is : ${length}`);
+
+        var y = new String("Champion");
+        console.log(y);
+
+        document.getElementById('content').innerHTML = '<h3>This is h3 Heading</h3>';
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loops in Javascript</title>
+</head>
+
+<body>
+    <h3>Loops in Javascript</h3>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt possimus beatae aperiam explicabo tempore modi
+        earum id alias, veniam dolore maxime deserunt est quibusdam necessitatibus consequuntur laborum ex fugiat.
+        Aliquid?</p>
+
+    <script>
+        let friends = ["ankit","Virat","Rohit","Kuldeep"];
+
+        for(let i=0;i<friends.length;i++) {
+            console.log(friends[i]);
+        }
+
+
+        friends.forEach(function f(counter) {
+            console.log("Hello " + counter + " How are You?");
+        })
+
+        for(counter of friends) {
+            console.log("Hello " + counter + " Friends");
+        }
+
+        let employee = {
+            name: "Harry",
+            salary: 10000,
+            designation: "Youtuber"
+        }
+
+        for(key in employee) {
+            console.log(`The ${key} of employee is ${employee[key]}`);
+        }
+
+
+        let i = 0;
+        while(i<4) {
+            console.log(`${i} is less than 4`);
+            i++;
+        }
+
+
+        let j = 34;
+        do {
+            console.log(`${j} is less than 4 and we are inside do while loop`);
+            j++;
+        }
+        while(j<4);
+    </script>
+</body>
+
+</html>

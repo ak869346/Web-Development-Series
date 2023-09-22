@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Browser Event</title>
+</head>
+    <style>
+        #btn {
+            background-color: red;
+            border: 2px solid black;
+            padding: 2px 4px;
+            margin: 4px;
+            font-weight: bold;
+            border-radius: 3px;
+        }
+    </style>
+<body>
+    <div class="container">
+    <h3>Browser Event</h3>
+    <p id="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A facere et doloremque quam libero in sed debitis
+        laborum quis sit mollitia numquam, reprehenderit corrupti quo, vel ducimus? Dolore, quam quisquam placeat
+        ducimus quo repellat nulla accusantium quasi ullam fugit explicabo quis consectetur doloremque aspernatur unde,
+        commodi corrupti illum mollitia tempore vel praesentium, ex dolores reprehenderit eveniet? Rem perspiciatis
+        doloremque sed incidunt magnam, porro deserunt error laudantium corporis labore perferendis, minus aspernatur,
+        dolorum ullam laborum? Est iste doloremque, nihil commodi cupiditate facilis quasi? Architecto, iusto. In ea
+        necessitatibus commodi eveniet placeat enim? Illo similique vitae vel neque quam iusto illum quis?</p>
+    </div>
+    <button id="btn" onclick="hide()">Show/Hide</button>
+    <script>
+
+        let para = document.getElementById('para');
+        para.addEventListener('mouseover',function run() {
+            console.log('Mouse inside');
+        })
+
+        para.addEventListener('mouseout',function run() {
+            console.log('Mouse outside');
+        })
+        function hide() {
+            let btn = document.getElementById('btn');
+            let para = document.getElementById('para');
+            if(para.style.display!='none') {
+                para.style.display='none';
+            }
+            else {
+                para.style.display='block';
+            }
+        }
+    </script>
+</body>
+
+</html>

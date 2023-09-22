@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interaction in Javascript</title>
+</head>
+
+<body>
+    <h3>Interaction in Javascript</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam accusamus incidunt pariatur perferendis nesciunt
+        corrupti ex vitae iure assumenda fugiat, voluptas, iusto doloremque dolorem itaque!</p>
+    <script>
+
+        // alert("This is alert in Javascript");
+        // alert does'nt return anything...
+
+        // let name = prompt("What is your name","Guest");
+        // console.log(name);
+
+        let deletePost = confirm("Do you really want to delete the post");
+
+        if(deletePost) {
+            console.log("Your post is deleted");
+        }
+        else {
+            console.log("Your post is not deleted");
+        }
+    </script>
+</body>
+
+</html>

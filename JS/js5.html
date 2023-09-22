@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array and Objects</title>
+</head>
+
+<body>
+    <h3>Array and Objects</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure fugiat tenetur fuga cumque aliquam? Asperiores
+        iusto, libero nostrum sed cum delectus ipsum autem magni. Vitae voluptatibus nulla vero. Recusandae,
+        repellendus.</p>
+    
+    <script>
+        let myVar1 = "Ankit";
+        let myVar2 = 34;
+        let myVar3 = true;
+        let myVar4 = null;
+        let myVar5 = undefined;
+
+        let player = {
+            name: "Virat",
+            roll: 18,
+            profession: "Cricketer",
+            Team: "India"
+        }
+        console.log(player);
+
+        console.log(player.Team);
+        console.log(player['name']);
+
+        let names = ["AK","Bhavesh",12,true,undefined,12,34,1,10];
+        let names1 = new Array("Utsav","Vikash jee","Champion",12,90,45,11,10);
+
+        let names3 = new Array(23);
+        console.log(names3);
+        console.log(names);
+        console.log(names.length);
+        console.log(names.sort());
+        names.push("Razz");
+        console.log(names);
+    </script>
+</body>
+
+</html>

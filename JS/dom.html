@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manipulating DOM</title>
+</head>
+
+<body>
+    <h3>DOM Manipulation.</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis facilis doloremque error aut, reiciendis fugit et,
+        ipsam, voluptate quas alias tempora consequatur repellat quibusdam aliquam a magnam reprehenderit quae non.</p>
+
+    <div id="main" class="container">
+        <ul id="nav">
+            <li>Home</li>
+            <li>About</li>
+            <li>contact</li>
+            <li>Service</li>
+        </ul>
+    </div>
+    <div class="container">
+        This is container..
+    </div>
+
+    <script>
+
+        let main = document.getElementById("main");
+        console.log(main);
+
+        let nav = document.getElementById("nav");
+        console.log(nav);
+
+        let containers = document.getElementsByClassName("container");
+        console.log(containers);
+
+        let sel = document.querySelector('.container');
+        console.log("Selector is" + sel);
+
+
+        let sel1 = document.querySelector('#nav>li');
+        console.log("Selector is" + sel1);
+
+
+        let sel3 = document.querySelectorAll('#nav>li');
+        console.log("Selector is" + sel3);
+    </script>
+</body>
+
+</html>

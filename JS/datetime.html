@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date and Time</title>
+
+    <style>
+        .container {
+            border: 3px solid white;
+            color: white;
+            background-color: black;
+            padding: 20px;
+            margin: 34px;
+            border-radius: 10px;
+            text-align: center;
+        }
+        #time {
+            font-weight: bold;
+            font-style: italic;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <h3>Date and Time in JS</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique aperiam voluptates officia voluptatem magni
+        eligendi vitae corrupti saepe non beatae sint mollitia delectus doloremque asperiores quia, neque perferendis
+        dolor modi!</p> -->
+
+    <div class="container">
+        Current time is <span id="time"></span>
+    </div>
+
+    <script>
+        console.log("This is date and time");
+
+        let now = new Date();
+        console.log(now);
+
+        let now1 = new Date(1000);
+        console.log(now1);
+
+        let newDate = new Date("2023-09-24");
+        console.log(newDate);
+
+        let date = new Date(2023,2,25,9,3,2,1000);
+        console.log(date);
+
+        let yr = newDate.getFullYear();
+        console.log(yr);
+
+        let dt = newDate.getDate();
+        console.log(dt);
+
+        let month = newDate.getMonth();
+        console.log(month);
+
+        let hour = newDate.getHours();
+        console.log(hour);
+
+        newDate.setDate(5);
+        console.log(newDate);
+
+        setInterval(updateTime,1000);
+
+        function updateTime() {
+            document.getElementById('time').innerHTML = new Date();
+        }
+
+
+    </script>
+</body>
+
+</html>

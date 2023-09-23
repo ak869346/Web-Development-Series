@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time function</title>
+    <style>
+        #time {
+            background-color: black;
+            color: white;
+            border: 2px solid white;
+            
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        Time now is <span id="time"></span>
+    <h3>Time function</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci expedita nihil doloremque harum. Alias
+        adipisci, autem, in dolor nemo nihil et quas cupiditate cumque commodi ducimus quo impedit amet reprehenderit
+        est labore aliquam neque quos illum minus voluptatibus molestias tempore? Recusandae, maiores? Beatae, quae!</p>
+    </div>
+    <script>
+
+        // function greet(name,byeText) {
+        //     console.log("Hello " + name + " " + byeText);
+        // }
+
+        // let timeOut = setTimeout(greet,5000,"Ankit","Be Happy");
+        // clearTimeout(timeOut);
+
+
+        // let interval = setInterval(greet,1000,"Ankit","Be Healthy");
+        // clearInterval(interval);
+
+        function dispalyTime() {
+            time = new Date();
+            console.log(time);
+            document.getElementById('time').innerHTML = time;
+        }
+
+        setInterval(dispalyTime,1000);
+
+
+        console.log("This is time function...");
+    </script>
+</body>
+
+</html>

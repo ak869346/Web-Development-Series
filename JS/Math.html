@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Object</title>
+</head>
+<body>
+    <h3>Math object in JS</h3>
+
+    <script>
+        let m = Math;
+        console.log(m);
+
+        console.log("The value of Math.PI is " + Math.PI);
+        console.log("The value of Math.E is " + Math.E);
+
+        // function of Math object
+
+        let a = 34.564;
+        let b = 67;
+        console.log("The value of Math.round is " + Math.round(a)); // 35
+        console.log("The value of Math.round is " + Math.round(b)); // 67
+
+        console.log("The value of Math.pow is " + Math.pow(2,3));  // 8
+
+        console.log("The value of Math.sqrt is " + Math.sqrt(36));  // 6
+
+        console.log("The value of Math.ceil is " + Math.ceil(34.297));  // 35 rounded up to the nearest integer
+        console.log("The value of Math.floor is " + Math.floor(66.987)); // 66 rounded down to the nearest integer
+
+        console.log("The value of Math.abs is " + Math.abs(6.89));  // 6.89
+        console.log("The value of Math.abs is " + Math.abs(-6.89))  // 6.89
+
+
+        console.log("The value of Math.sin(PI/2) is " + Math.sin(Math.PI/2));  // 1
+        console.log("The value of Math.cos(PI/2) is " + Math.cos(Math.PI/2));  // 0
+
+        console.log("The value of maximum is " + Math.max(14,15,89));  // 89
+        console.log("The value of Minimum is " + Math.min(51,96,26));  // 26
+
+        // Generating random number
+
+        let r = Math.random();
+        console.log("The random number is " + r);
+
+        let a1 = 1;
+        let b1 = 100;
+
+        let r1_100 = a1 + (b1-a1)*Math.random();
+
+        console.log("The random number between a1 and b1 is " + r1_100);
+
+
+
+
+
+
+    </script>
+</body>
+</html>
